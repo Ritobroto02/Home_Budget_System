@@ -41,7 +41,7 @@ class Database:
         except sqlite3.Error as e:
             print("Error updating record:", e)
 
-    def save_to_csv(self, filename):  # Changed method name to save_to_csv
+    def save_to_csv(self, filename):  
         # Fetch all records from the database
         records = self.fetchRecord("SELECT * FROM expenseRecord")
         
